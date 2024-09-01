@@ -1,0 +1,25 @@
+POST http://localhost:5000/tasks HTTP/1.1
+content-type: application/json
+
+{
+    "title": "Learn fullstack development",
+    "description": "Learn fullstack development with  potgres, express, reactjs and nodejs",
+    "completed": false
+}
+
+###
+PUT http://localhost:5000/tasks/2 HTTP/1.1
+content-type: application/json
+
+{
+    "title": "Learn fullstack development.",
+    "description": "Learn fullstack development with  potgres, express, reactjs and nodejs.",
+    "completed": true
+}
+
+###
+GET http://localhost:5000/tasks HTTP/1.1
+
+
+###
+DELETE http://localhost:5000/tasks/1 HTTP/1.1
